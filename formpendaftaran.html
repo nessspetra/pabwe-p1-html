@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <title>Form Pendaftaran</title>
+</head>
+<body bgcolor="#f7f7f7">
+
+  <!-- ======================== JUDUL FORM ======================== -->
+  <h1 align="center">Form Pendaftaran</h1>
+  <p align="center">
+    Isi formulir berikut dengan lengkap. Kolom bertanda * wajib diisi.
+  </p>
+
+  <!-- ======================== FORM PENDAFTARAN ======================== -->
+  <form action="#" method="post">
+
+    <!-- ===== Identitas ===== -->
+    <fieldset>
+      <legend><b>Identitas</b></legend>
+
+      <!-- Nama Lengkap -->
+      <p>
+        <label for="fullname">Nama Lengkap * :</label><br>
+        <input id="fullname" name="fullname" type="text" placeholder="Nama lengkap" required>
+      </p>
+
+      <!-- Jenis Kelamin -->
+      <p>
+        <label>Jenis Kelamin * :</label><br>
+        <input type="radio" name="gender" value="Laki-laki" required> Laki-laki
+        <input type="radio" name="gender" value="Perempuan"> Perempuan
+        <input type="radio" name="gender" value="Lainnya"> Lainnya
+      </p>
+
+      <!-- Tempat Lahir -->
+      <p>
+        <label for="place">Tempat Lahir * :</label><br>
+        <input id="place" name="place_of_birth" type="text" placeholder="Kota/Kabupaten" required>
+      </p>
+
+      <!-- Tanggal Lahir -->
+      <p>
+        <label for="birthdate">Tanggal Lahir * :</label><br>
+        <input id="birthdate" name="birthdate" type="date" required>
+      </p>
+
+      <!-- Password -->
+      <p>
+        <label for="password">Password * :</label><br>
+        <input id="password" name="password" type="password" placeholder="Minimal 6 karakter" required>
+      </p>
+    </fieldset>
+
+    <!-- ===== Hobi ===== -->
+    <fieldset>
+      <legend><b>Hobi (pilih satu atau lebih)</b></legend>
+      <input type="checkbox" name="hobby" value="Membaca"> Membaca
+      <input type="checkbox" name="hobby" value="Olahraga"> Olahraga
+      <input type="checkbox" name="hobby" value="Fotografi"> Fotografi
+      <input type="checkbox" name="hobby" value="Musik"> Musik
+      <input type="checkbox" name="hobby" value="Coding"> Coding
+      <input type="checkbox" name="hobby" value="Travelling"> Travelling
+    </fieldset>
+
+    <!-- ===== Persetujuan ===== -->
+    <fieldset>
+      <legend><b>Persetujuan</b></legend>
+      <input type="checkbox" id="agree" name="agree" required>
+      <label for="agree">
+        Saya menyatakan bahwa data yang saya isi adalah benar dan saya menyetujui syarat & ketentuan yang berlaku.
+      </label>
+    </fieldset>
+
+    <!-- ===== Tombol ===== -->
+    <p align="center">
+      <input type="reset" value="Reset">
+      <input type="submit" value="Submit">
+    </p>
+  </form>
+
+  <!-- ======================== LINK KEMBALI ======================== -->
+  <p align="center">
+    <a href="datadiri.html">← Kembali ke Halaman Utama</a>
+  </p>
+
+</body>
+</html>
